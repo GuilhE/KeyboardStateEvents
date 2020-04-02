@@ -9,7 +9,7 @@ The first step is to include KeyboardStateEvents into your project, for example,
 ```groovy
 implementation 'com.github.guilhe:keyboard-state-events:${LATEST_VERSION}'
 ```
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.guilhe/keyboard-state-events/badge.svg)](https://search.maven.org/search?q=g:com.github.guilhe%20AND%20keyboard-state-events) [![Download](https://api.bintray.com/packages/gdelgado/androidKeyboardStateEvents/images/download.svg)](https://bintray.com/gdelgado/android/KeyboardStateEvents/_latestVersion)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.guilhe/keyboard-state-events/badge.svg)](https://search.maven.org/search?q=g:com.github.guilhe%20AND%20keyboard-state-events) [![Download](https://api.bintray.com/packages/gdelgado/androidKey/boardStateEvents/images/download.svg)](https://bintray.com/gdelgado/android/KeyboardStateEvents/_latestVersion)
 
 ## Sample usage
 
