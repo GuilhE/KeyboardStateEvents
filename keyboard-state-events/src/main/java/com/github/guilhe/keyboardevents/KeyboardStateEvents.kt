@@ -25,17 +25,17 @@ fun ComponentActivity.dismissKeyboard() {
     imm.hideSoftInputFromWindow(findViewById<ViewGroup>(Window.ID_ANDROID_CONTENT).windowToken, 0)
 }
 
-fun ComponentActivity.isKeyboardOpen(visibleThreshold: Float = 50f): Boolean {
+fun ComponentActivity.isKeyboardOpen(visibleThreshold: Float = 100f): Boolean {
     val root = findViewById<ViewGroup>(Window.ID_ANDROID_CONTENT)
     val measureRect = Rect()
     root.getWindowVisibleDisplayFrame(measureRect)
-    return root.height - measureRect.bottom > ceil((visibleThreshold * Resources.getSystem().displayMetrics.density))
+    return root.rootView.height - measureRect.bottom > ceil((visibleThreshold * Resources.getSystem().displayMetrics.density))
 }
 
-fun ViewGroup.isKeyboardOpen(visibleThreshold: Float = 50f): Boolean {
+fun ViewGroup.isKeyboardOpen(visibleThreshold: Float = 100f): Boolean {
     val measureRect = Rect()
     getWindowVisibleDisplayFrame(measureRect)
-    return height - measureRect.bottom > ceil((visibleThreshold * Resources.getSystem().displayMetrics.density))
+    return rootView.height - measureRect.bottom > ceil((visibleThreshold * Resources.getSystem().displayMetrics.density))
 }
 
 enum class KeyboardState { OPEN, CLOSED }
