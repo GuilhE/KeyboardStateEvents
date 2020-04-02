@@ -8,7 +8,7 @@ import androidx.lifecycle.Observer
 import com.github.guilhe.keyboardevents.KeyboardStateLiveData
 import com.github.guilhe.keyboardevents.KeyboardState
 import com.github.guilhe.keyboardevents.KeyboardState.OPEN
-import com.github.guilhe.keyboardevents.bindKeyboardEvents
+import com.github.guilhe.keyboardevents.bindKeyboardStateEvents
 import com.github.guilhe.keyboardevents.sample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -31,6 +31,6 @@ class MainActivity : AppCompatActivity() {
         KeyboardStateLiveData.state.observe(this, Observer {
             binding.stateTextView.text = String.format(getString(R.string.keyboard), it.name)
         })
-        bindKeyboardEvents()
+        bindKeyboardStateEvents()
     }
 }
