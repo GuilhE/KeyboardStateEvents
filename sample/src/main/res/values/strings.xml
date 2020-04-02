@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sample</string>
+    <string name="tap_me">Tap me</string>
+    <string name="keyboard">Keyboard is: %s</string>
+</resources>

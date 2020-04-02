@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+apply plugin: 'jacoco-android'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunnerArguments clearPackageData: 'true'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            testCoverageEnabled true
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        disable 'TypographyFractions', 'TypographyQuotes'
+    }
+
+    // This enables long timeouts required on slow environments, e.g. Travis
+    adbOptions {
+        timeOutInMs 10 * 60 * 1000  // Set the timeout to 10 minutes
+        installOptions "-d", "-t"
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.ext.kotlin_version"
+    implementation "androidx.activity:activity-ktx:1.1.0"
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.0-alpha01'
+}
+
+if (project.rootProject.file('local.properties').exists()) {
+    apply from: rootProject.file('deploy-bintray.gradle')
+}

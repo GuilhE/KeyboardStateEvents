@@ -1,0 +1,3 @@
+rootProject.name='android-keyboard-events'
+include ':keyboard-events'
+include ':sample'
