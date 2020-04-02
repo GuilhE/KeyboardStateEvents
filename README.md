@@ -25,8 +25,15 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
-
 Just that and you're done! 😎
+
+Also, some handy extension functions:  
+```java
+ComponentActivity.toggleKeyboard()
+ComponentActivity.dismissKeyboard()
+ComponentActivity.isKeyboardOpen()
+ViewGroup.isKeyboardOpen()
+```
 
 <img src="https://raw.githubusercontent.com/Guilhe/KeyboardStateEvents/master/sample.gif" alt="Sample"/>
     
