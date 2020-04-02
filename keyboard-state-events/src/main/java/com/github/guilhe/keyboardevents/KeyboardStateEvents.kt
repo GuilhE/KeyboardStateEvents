@@ -9,7 +9,7 @@ import androidx.activity.ComponentActivity
 import androidx.lifecycle.*
 import kotlin.math.ceil
 
-fun ComponentActivity.bindKeyboardEvents() {
+fun ComponentActivity.bindKeyboardStateEvents() {
     lifecycle.addObserver(ViewGroupHolder(findViewById(Window.ID_ANDROID_CONTENT)))
 }
 

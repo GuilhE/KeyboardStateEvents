@@ -13,7 +13,7 @@ implementation 'com.github.guilhe:keyboard-state-events:${LATEST_VERSION}'
 
 ## Sample usage
 
-Call `bindKeyboardEvents()` in you AppCompatActivity or FragmentActivity and observe `KeyboardLiveData.state` to get notified:
+Call `bindKeyboardStateEvents()` in you `AppCompatActivity` or `FragmentActivity` and observe `KeyboardLiveData.state` to get notified:
 ```java
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         ...
         KeyboardLiveData.state.observe(this, Observer {...})
-        bindKeyboardEvents()
+        bindKeyboardStateEvents()
     }
 }
 ```
