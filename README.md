@@ -1,4 +1,5 @@
 # KeyboardStateEvents
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-KeyboardStateEvents-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/8092)
 
 Get notified through LiveData when Keyboard is open or closed
 
