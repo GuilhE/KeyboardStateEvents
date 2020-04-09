@@ -76,6 +76,6 @@ private class ViewGroupHolder(private val root: ViewGroup) : LifecycleEventObser
     }
 
     private fun unregisterKeyboardListener() {
-        root.viewTreeObserver.addOnGlobalLayoutListener(listener)
+        root.viewTreeObserver.removeOnGlobalLayoutListener(listener)
     }
 }
