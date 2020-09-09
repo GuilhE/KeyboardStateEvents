@@ -18,7 +18,7 @@ Call `bindKeyboardStateEvents()` in you `AppCompatActivity` or `FragmentActivity
 ```java
 class MainActivity : AppCompatActivity() {
 
-      override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         ...
         KeyboardLiveData.state.observe(this, Observer {...})
