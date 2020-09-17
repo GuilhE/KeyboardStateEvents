@@ -36,7 +36,7 @@ ComponentActivity.isKeyboardOpen()
 ViewGroup.isKeyboardOpen()
 ```
 
-<img src="https://raw.githubusercontent.com/Guilhe/KeyboardStateEvents/master/sample.gif" alt="Sample"/>
+<img src="media/sample.gif" alt="Sample"/>
     
 ## Dependencies
 - [androidx.lifecycle:lifecycle-livedata-ktx](https://developer.android.com/jetpack/androidx/releases/lifecycle)
