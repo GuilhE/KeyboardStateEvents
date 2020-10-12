@@ -5,7 +5,7 @@ Get notified through LiveData when Keyboard is open or closed
 
 ## Installation
 
-ResourcesProvider-ktx is distributed through [Maven Central](https://search.maven.org/artifact/com.github.guilhe/keyboard-state-events), [Jcenter](https://bintray.com/gdelgado/android/KeyboardStateEvents) and [Jitpack](https://jitpack.io/#GuilhE/KeyboardStateEvents).
+KeyboardStateEvents is distributed through [Maven Central](https://search.maven.org/artifact/com.github.guilhe/keyboard-state-events), [Jcenter](https://bintray.com/gdelgado/android/KeyboardStateEvents) and [Jitpack](https://jitpack.io/#GuilhE/KeyboardStateEvents).
 
 ```groovy
 implementation 'com.github.guilhe:keyboard-state-events:${LATEST_VERSION}'
