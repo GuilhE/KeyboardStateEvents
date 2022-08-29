@@ -5,13 +5,12 @@ Get notified through LiveData when Keyboard is open or closed
 
 ## Installation
 
-KeyboardStateEvents is distributed through [Maven Central](https://search.maven.org/artifact/com.github.guilhe/keyboard-state-events), [Jcenter](https://bintray.com/gdelgado/android/KeyboardStateEvents) and [Jitpack](https://jitpack.io/#GuilhE/KeyboardStateEvents).
+KeyboardStateEvents is distributed through [Maven Central](https://search.maven.org/artifact/com.github.guilhe/keyboard-state-events) and [Jitpack](https://jitpack.io/#GuilhE/KeyboardStateEvents).
 
 ```groovy
 implementation 'com.github.guilhe:keyboard-state-events:${LATEST_VERSION}'
 ```
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.guilhe/keyboard-state-events.svg)](https://search.maven.org/search?q=g:com.github.guilhe%20AND%20keyboard-state-events) [![Download](https://api.bintray.com/packages/gdelgado/android/KeyboardStateEvents/images/download.svg)](https://bintray.com/gdelgado/android/KeyboardStateEvents/_latestVersion) ![Bintray](https://img.shields.io/bintray/dt/gdelgado/android/KeyboardStateEvents)
-
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.guilhe/keyboard-state-events.svg)](https://search.maven.org/search?q=g:com.github.guilhe%20AND%20keyboard-state-events)
 ## Usage
 
 Call `bindKeyboardStateEvents()` in you `AppCompatActivity` or `FragmentActivity` and observe `KeyboardStateLiveData.state` to get notified:
